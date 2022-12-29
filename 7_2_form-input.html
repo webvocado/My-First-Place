@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Input</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Input Tag</legend>
+        <ul>
+          <li>
+            <label for="text">Text</label>
+            <input type="text" id="text" required value="Wolf" readonly />
+          </li>
+          <li>
+            <label for="email">이메일</label>
+            <input type="email" id="email" required value="Hello" disabled />
+          </li>
+          <li>
+            <label for="tel">전화번호</label>
+            <input type="tel" id="tel" required autofocus />
+          </li>
+          <li>
+            <label for="url">URL</label>
+            <input
+              type="url"
+              id="url"
+              required
+              placeholder="URL을 입력해주세요."
+            />
+          </li>
+          <li>
+            <label for="number">number</label>
+            <input type="number" id="number" required min="5" max="10" />
+          </li>
+          <li>
+            <label for="range">range</label>
+            <input type="range" id="range" required />
+          </li>
+          <!-- number와 range에는 최소최댓값을 설정할 수 있는 속성이 있다. -->
+          <li>
+            <label for="password">password</label>
+            <input type="password" id="password" required />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>날짜관련</legend>
+        <ul>
+          <li>
+            <label for="date">날짜</label>
+            <input type="date" id="date" min="2022-12-01" max="2022-12-31" />
+          </li>
+          <li>
+            <label for="month">월</label>
+            <input type="month" id="month" />
+          </li>
+          <li>
+            <label for="week">주</label>
+            <input type="week" id="week" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>시간관련</legend>
+        <ul>
+          <li>
+            <label for="time">시간</label>
+            <input type="time" id="time" min="16:00" max="18:00" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>그 외</legend>
+        <ul>
+          <li>
+            <input type="file" multiple />
+          </li>
+          <li>
+            <input type="hidden" name="" value="" />
+            <!-- 서버측으로 어떠한 값을 전송할 때 사용, UI상으로는 표시되지 않음 -->
+          </li>
+        </ul>
+      </fieldset>
+
+      <input type="submit" value="제출하기" />
+    </form>
+  </body>
+</html>
